@@ -21,8 +21,9 @@ http://whosecard.com:8081/api/msg/ext?url=https%3a%2f%2fmp.weixin.qq.com%2fs%3f_
 返回如下：
 {
 	"ok": true,
-	"clicksCount": 56602,
-	"likeCount": 196,
+	"clicksCount": 56602,  # 阅读量
+	"likeCount": 196,  # 在看数
+	"oldLikeCount": 100,  # 点赞数
 	"top": 1,  # 当前文章在发布时的位置，从1开始计数
 	"advertisementNum": 1,
 	"advertisementInfo": [
