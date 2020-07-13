@@ -200,6 +200,8 @@ http://whosecard.com:8081/api/xiaohongshu/search/notes?keyword=口红&key=***&pa
 
 如果要翻页，需要传入page参数，从1开始，每页最多20条。
 sort为搜索排序方式，可取值：general(综合) popularity_descending(最热) time_descending(最新)， 默认取general
+filter_note_type为笔记类型筛选，可取值：普通笔记、视频笔记，默认不传此参数，即不执行筛选
+
 返回如下：
 {
   "ok": true,
@@ -214,7 +216,7 @@ sort为搜索排序方式，可取值：general(综合) popularity_descending(�
 http://whosecard.com:8081/api/xiaohongshu/search/goods?keyword=元气森林&key=***&page=1
 
 如果要翻页，需要传入page参数，从1开始，每页最多20条。
-sort为搜索排序方式，可取值：sales_qty(销量) fav_count(种草数) price_asc(价格生序) price_desc(价格降序) new_arrival(新品优先)
+sort为搜索排序方式，可取值：sales_qty(销量) fav_count(种草数) price_asc(价格升序) price_desc(价格降序) new_arrival(新品优先)
 当sort不传时，则默认为综合搜索
 
 返回如下：
