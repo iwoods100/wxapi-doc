@@ -229,9 +229,14 @@ http://whosecard.com:8081/api/douyin/aweme/search?keyword=***&search_source=***&
 
 keyword为搜索关键词，如：北京坊
 search_source为搜索类型，目前支持以下取值：
-	video_search: 搜索视频，如需翻页，可传入cursor参数（上一页会返回下一页的cursor值）
-	poi: 搜索地点
+  video_search: 搜索视频
+  poi: 搜索地点
   user: 搜索用户，此时keyword建议填用户的short_id(抖音号)
+
+如果对搜索结果如需翻页，可传入cursor参数（上一页会返回下一页的cursor值）
+如果是搜索视频，额外支持以下参数：
+  sort_type: 对结果排序，取值为 0（综合排序），1（最多点赞），2（最新发布）
+  publish_time: 限制发布时间，取值为 0（不限），1（一天内），7（一周内），182（半年内）
 
 返回如下：
 {
