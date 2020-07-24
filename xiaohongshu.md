@@ -228,6 +228,22 @@ sort为搜索排序方式，可取值：sales_qty(销量) fav_count(种草数) p
 }
 ```
 
+#### 关键词搜索用户列表
+```
+http://whosecard.com:8081/api/xiaohongshu/search/user?keyword=元气森林&key=***&page=1
+
+如果要翻页，需要传入page参数，从1开始，每页最多20条。
+本接口的keyword可传小红书red id，表示根据red id搜索用户。
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与小红书接口一样
+  }
+}
+```
+
 #### 话题页/poi页相关接口
 ```
 http://whosecard.com:8081/api/xiaohongshu/fe_api?pageId=***&key=***
