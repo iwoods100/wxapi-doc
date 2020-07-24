@@ -59,11 +59,14 @@ http://whosecard.com:8081/api/douyin/aweme/favorite?key=***&user_id=96637069360
 }
 ```
 
-#### 实时获取挑战视频列表（按热度排序）
+#### 实时获取话题/挑战视频列表（按热度排序）
 ```
-http://whosecard.com:8081/api/douyin/aweme/challenge?key=***&ch_id=1611823344632835
+http://whosecard.com:8081/api/douyin/aweme/challenge?key=***&ch_id=1611823344632835&is_commerce=1
 
+参数is_commerce不能为空，此值是从话题/挑战详情接口里获取到的，如果is_commerce=1则表示为商业话题，传0则为普通话题
 如果要翻页，需要传入cursor参数（这里的参数跟前面的max_cursor不一样，不要搞混了），此参数在前一页的请求中会返回，每次翻页都会更新。
+此接口返回的视频个数可能不固定，具体以实际为准。
+
 返回如下：
 {
   "ok": true,
@@ -86,7 +89,7 @@ http://whosecard.com:8081/api/douyin/aweme/user/detail?user_id=102020882079&key=
 }
 ```
 
-#### 获取挑战详情页
+#### 获取话题/挑战详情页
 ```
 http://whosecard.com:8081/api/douyin/aweme/challenge/detail?ch_id=1612674164817944&key=***
 
