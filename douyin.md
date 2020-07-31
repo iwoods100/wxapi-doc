@@ -235,6 +235,7 @@ search_source为搜索类型，目前支持以下取值：
   video_search: 搜索视频
   poi: 搜索地点
   user: 搜索用户，此时keyword建议填用户的short_id(抖音号)
+  challenge: 搜索话题/挑战
 
 如果对搜索结果如需翻页，可传入cursor参数（上一页会返回下一页的cursor值）
 如果是搜索视频，额外支持以下参数：
