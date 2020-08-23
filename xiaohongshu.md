@@ -244,16 +244,17 @@ http://whosecard.com:8081/api/xiaohongshu/search/user?keyword=元气森林&key=*
 }
 ```
 
-#### 话题页/poi页相关接口
+#### topic/话题页相关接口
 ```
 http://whosecard.com:8081/api/xiaohongshu/fe_api?pageId=***&key=***
 
-本接口同时支持话题页与poi页
-如果是话题页，pageId为话题分享页的id，如5ac48683ec9d135e560e4bc4
-如果是poi页，pageId也是对应分享页id，如5a7d3969ec9d13208be64be6
+如果是获取topic/话题详情，pageId为topic分享页的id，如 5f40db4e2e11630001b3a440
 
-如果要获取笔记列表，则传入subPath=notes参数，翻页参数为page，从1开始，默认为1，如下：
-http://whosecard.com:8081/api/xiaohongshu/fe_api?pageId=***&subPath=notes&page=1&key=***
+如果要获取笔记列表，请传入subPath=notes参数，并支持以下额外参数：
+page：翻页参数，从1开始，默认为1
+sort：排序，可取之为hot与time，默认为hot，表示按热度排序，time表示按最新排序
+示例如下：
+http://whosecard.com:8081/api/xiaohongshu/fe_api?pageId=***&subPath=notes&page=1&sort=hot&key=***
 
 返回如下：
 {
