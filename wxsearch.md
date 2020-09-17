@@ -107,7 +107,8 @@ summary: 如果传1，则nickname,signature会将匹配到的关键词用<em>标
 GET http://whosecard.com:8081/api/wx/article/search?keyword=***&start=0&key=***
 
 query参数解释：
-keyword: 搜索关键词，多个关键词可用空格分开（不分开也可以，会自动分词）
+keyword: 搜索关键词，多个关键词可用半角逗号,分隔（注意，所有词都不会自动切割分词处理）
+keywordMode: 可传and或or，表示keyword里的多个词之间的搜索关系 ，默认and
 biz: 公众号biz，限定在此公众号下进行搜索，如: MjM5MjAxNDM4MA==，指定多个公众号时，用半角逗号,分隔
 accountId: 公众号ID，限定在此公众号下进行搜索，如: rmrbwx，指定多个公众号时，用半角逗号,分隔
 accountName: 公众号名称，限定在此公众号下进行搜索，如: 人民日报，指定多个公众号时，用半角逗号,分隔
@@ -120,7 +121,6 @@ sort: 排序，目前支持三种排序，分别为：0(默认排序), 1(按发�
 summary: 如果传1，则title,content会将匹配到的关键词用<em>标签包裹，一般用户搜索高亮显示，默认不开启
 searchRange: 如果传1，则只对标题进行搜索。默认为0，即标题+正文搜素
 searchPos: 如果传1，则只返回头条。默认为0，即不限制文章发布位置
-fullMatch: 如果传1，则必须完整包含搜索词，不会进行分词处理。默认为0，即会进行适当的分词处理后再搜索
 copyrightStat: 如果传1，则只返回原创文章。如果传2，则只返回转载文章。默认为0，即返回所有
 
 keyword，biz，accountId，accountName这几个参数必须填一个。其中biz，accountId，accountName参数同一时间只能有一个生效，如果填了biz或accountId或accountName且没有填keyword，则会返回该公众号下的所有收录文章。
@@ -144,7 +144,7 @@ startDate/endDate与startTime/endTime都是限定时间范围的参数，所以�
     "hasMore": true,  # 是否还能翻页
     "nextStart": 10, # 翻下一页的start参数
     "total": 1755,  # 全局搜索结果条数，此值为总量，作为参考使用，实际能返回的文章量由viewTotal决定
-    "viewTotal": 1755,  # 通过翻页可返回的结果条数，此值最大为5000（如果全局搜索结果大于5000且需要获取全部文章，建议缩小搜索的日期范围）
+    "viewTotal": 1755,  # 通过翻页可返回的结果条数，此值最大为10000（如果全局搜索结果大于10000且需要获取全部文章，建议缩小搜索的日期范围）
     "items": [  # 文章列表
       {
         "accountId": "bukeqi168",  # 公众号id
