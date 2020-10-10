@@ -10,7 +10,7 @@
 
 #### 根据vin code获取标准设备信息
 ```
-http://localhost:8081/api/car/vin?vin=LFVBA24B323018323&key=***
+http://whosecard.com:8081/api/car/vin?vin=LFVBA24B323018323&key=***
 
 参数vin请替换为自己想要查询的vin code。
 
