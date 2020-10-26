@@ -10,6 +10,49 @@
 
 **除非特殊说明，默认都是从app接口获取数据。**
 
+#### 实时获取用户发布的音乐作品列表
+```
+http://whosecard.com:8081/api/douyin/aweme/music/list?key=***&user_id=96637069360
+
+每页最多返回10个音乐作品，如果要翻页，则需要传入cursor参数，此参数在前一页的请求中会返回，每次翻页都会更新。
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
+#### 实时获取单个音乐作品详情
+```
+http://whosecard.com:8081/api/douyin/aweme/music/detail?key=***&music_id=6564548752472345351
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
+#### 实时获取单个音乐作品关联的视频列表
+```
+http://whosecard.com:8081/api/douyin/aweme/music/aweme/list?key=***&music_id=6564548752472345351
+
+每页最多返回18个音乐作品，如果要翻页，则需要传入cursor参数，此参数在前一页的请求中会返回，每次翻页都会更新。
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
 #### 实时获取用户发布的视频列表（按时间排序）
 ```
 http://whosecard.com:8081/api/douyin/aweme/post?key=***&user_id=96637069360
