@@ -111,10 +111,9 @@ page指定页数，从1开始。
 
 #### 获取用户视频流Feed（app版）
 ```
-http://whosecard.com:8081/api/kuaishou/user/feeds?userId=119808726&userEid=goodDASheng&pcursor=***&key=***
+http://whosecard.com:8081/api/kuaishou/user/feeds?userId=119808726&pcursor=***&key=***
 
 userId为快手用户唯一数字id。
-userEid为快手对外的id。
 pcursor用于翻页，第一页不用填，返回结果的pcursor值为下一页的请求参数。
 
 返回如下：
