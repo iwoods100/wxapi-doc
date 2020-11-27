@@ -16,11 +16,15 @@
 
 #### 小红书相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/xiaohongshu.md)
 
-#### 快手相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/kuaishou.md)
+#### 社交电商-【橙心优选】相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/cxyx.md)
 
-#### b站相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/bilibili.md)
+#### 社交电商-【十荟团】相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/shihuigroup.md)
 
-#### 知乎相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/zhihu.md)
+<!-- #### 快手相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/kuaishou.md) -->
+
+<!-- #### b站相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/bilibili.md) -->
+
+<!-- #### 知乎相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/zhihu.md) -->
 
 <!-- #### 头条相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/toutiao.md) -->
 
