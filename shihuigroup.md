@@ -16,6 +16,8 @@ http://whosecard.com:8081/api/shihuigroup/listNearLeaders?key=***&lng=121.528064
 
 lng与lat分别为指定的经纬度
 
+此接口在app和微信小程序里返回的数据不完全相同，默认走app，如果要走小程序请求，请传参数source=wxmini
+
 返回如下：
 {
   "ok": true,
