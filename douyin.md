@@ -160,7 +160,9 @@ http://whosecard.com:8081/api/douyin/aweme/poi/challenge/related?ch_id=***&key=*
 
 #### 实时获取单个抖音视频detail信息（不包含播放量）
 ```
-http://whosecard.com:8081/api/douyin/aweme/detail?key=***&aweme_id=6580087189395213581
+http://whosecard.com:8081/api/douyin/aweme/detail?key=***&aweme_id=6580087189395213581&short_url=https://v.douyin.com/JXwVogj/
+
+aweme_id是视频id，short_url是视频分享的短链接，传其中任意一个都可以
 
 返回如下：
 {
