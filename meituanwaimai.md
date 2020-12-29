@@ -12,7 +12,7 @@
 
 #### 获取店铺列表
 ```
-http://whosecard.com:8081/api/mtwaimai/poi/list?key=***&lng=121.528064&lat=31.308544&keyword=*&category_type=*&second_category_type=*&page=0&sort_type=5
+http://whosecard.com:8081/api/mtwaimai/poi/list?key=***&lng=121.528064&lat=31.308544&keyword=*&category_type=*&second_category_type=*&page=0&sort_type=0
 
 参数解释：
 lng与lat分别为指定的经纬度，不能为空
@@ -20,7 +20,7 @@ keyword为搜索关键词，可为空
 category_type为店铺一级类型，目前只支持两类： 美食类(910), 超市便利(102620)
 second_category_type为店铺二级分类，目前暂不需要传
 page为翻页参数，注意是从0开始，每次翻页+1即可
-sort_type为排序类型：默认为5
+sort_type为排序类型：默认为0
   0: 综合排序
   1: 销量优先
   2: 速度优先
