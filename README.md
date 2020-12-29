@@ -16,9 +16,11 @@
 
 #### 小红书相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/xiaohongshu.md)
 
-#### 社交电商-【橙心优选】相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/cxyx.md)
+<!-- #### 社交电商-【橙心优选】相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/cxyx.md) -->
 
 #### 社交电商-【十荟团】相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/shihuigroup.md)
+
+#### 美团外卖相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/meituanwaimai.md)
 
 <!-- #### 快手相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/kuaishou.md) -->
 
