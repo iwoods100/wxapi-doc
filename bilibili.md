@@ -23,48 +23,45 @@ http://whosecard.com:8081/api/bilibili/web?key=***&api=***&其它参数=***
 
 以下是各数据接口定义：
 
-获取播放数与阅读数（参数如下）：
-api=user_upstat
-mid=用户id，如 2505015
+获取用户基础信息：
+api=user_base
+mid=用户id，如 507537547
 
-获取标签：
+获取用户标签：
 api=user_tags
-mid=用户id，如 2505015
+mid=用户id，如 507537547
 
-获取粉丝数，关注数：
+获取用户粉丝数，关注数：
 api=user_stat
-mid=用户id，如 2505015
-
-获取用户充电统计信息：
-api=user_charging
-mid=用户id，如 2505015
+mid=用户id，如 507537547
 
 获取用户关注列表：
 api=user_followings
-mid=用户id，如 2505015
+mid=用户id，如 507537547
 page：翻页数，默认为1
 
 获取用户粉丝列表：
 api=user_followers
-mid=用户id，如 2505015
+mid=用户id，如 507537547
 page：翻页数，默认为1
 
-获取用户基础信息：
-api=user_base
-mid=用户id，如 2505015
 
-获取投稿页列表，以及投票数量：
+获取视频列表：
 api=user_submit_videos
-mid=用户id，如 2505015
+mid=用户id，如 507537547
 page：翻页数，默认为1
 
 获取单条视频的统计数据：
 api=single_stat
-aid=单条视频id，如 35963971
+aid=单条视频id，如 91256107
 
 获取单条视频的tag列表：
 api=detail_tag
-aid=单条视频id，如 35963971
+aid=单条视频id，如 91256107
+
+获取视频下的评论：
+api=comments
+aid=单条视频id，如 91256107
 
 获取动态历史列表：
 api=user_space_history

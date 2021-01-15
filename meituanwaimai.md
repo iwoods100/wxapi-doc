@@ -17,7 +17,7 @@ http://whosecard.com:8081/api/mtwaimai/poi/list?key=***&lng=121.528064&lat=31.30
 参数解释：
 lng与lat分别为指定的经纬度，不能为空
 keyword为搜索关键词，可为空
-category_type为店铺一级类型，目前只支持两类： 美食类(910), 超市便利(102620)
+category_type为店铺一级类型，目前支持这些类型： 美食类(910), 超市便利(102620)，药店(102530)
 second_category_type为店铺二级分类，目前暂不需要传
 page为翻页参数，注意是从0开始，每次翻页+1即可
 sort_type为排序类型：默认为0
@@ -45,7 +45,7 @@ http://whosecard.com:8081/api/mtwaimai/poi/products?key=***&wm_poi_id=*&category
 
 参数解释：
 wm_poi_id为店铺id
-category_type为店铺一级类型，目前只支持两类： 美食类(910), 超市便利(102620)
+category_type为店铺一级类型，目前支持这些类型： 美食类(910), 超市便利(102620)，药店(102530)
 
 注意，不同category_type返回的结果格式是不一定相同，以实际返回结果为准
 

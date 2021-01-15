@@ -24,7 +24,7 @@
 
 <!-- #### 快手相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/kuaishou.md) -->
 
-<!-- #### b站相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/bilibili.md) -->
+#### b站相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/bilibili.md)
 
 <!-- #### 知乎相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/zhihu.md) -->
 
