@@ -28,7 +28,7 @@
 
 <!-- #### 知乎相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/zhihu.md) -->
 
-<!-- #### 头条相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/toutiao.md) -->
+#### 头条相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/toutiao.md)
 
 ///////////////////////////////////////////////////////////
 
