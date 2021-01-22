@@ -58,6 +58,24 @@ category_type为店铺一级类型，目前支持这些类型： 美食类(910),
 }
 ```
 
+#### 获取药店广告位里的商品列表
+```
+http://whosecard.com:8081/api/mtwaimai/poi/productSet?key=***&wm_poi_id=*&product_set_tag=*&page=0
+
+参数解释：
+wm_poi_id为店铺id
+product_set_tag来自于药店的【获取指定店铺下的商品列表】接口，对应字段为：productsettag
+page为翻页参数，注意是从0开始，每次翻页+1即可
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与官方接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
 #### 获取商超店铺某品类tag下的商品列表
 ```
 http://whosecard.com:8081/api/mtwaimai/poi/menuproducts?key=***&wm_poi_id=*&spu_tag_id=*&tag_type=*&page=0
