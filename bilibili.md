@@ -35,6 +35,18 @@ mid=用户id，如 507537547
 api=user_stat
 mid=用户id，如 507537547
 
+获取用户总播放数、阅读数、点赞数
+api=user_upstat
+mid=用户id，如 507537547
+
+获取用户充电数据
+api=user_charging
+mid=用户id，如 507537547
+
+获取用户发布作品分类统计
+api=user_navnum
+mid=用户id，如 507537547
+
 获取用户关注列表：
 api=user_followings
 mid=用户id，如 507537547
