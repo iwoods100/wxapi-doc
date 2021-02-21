@@ -8,6 +8,8 @@
 
 [账户余额及消费明细查询](https://github.com/iwoods100/wxapi-doc/blob/master/pay.md)
 
+#### 代理转发请求，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/proxy.md)
+
 #### 微信公众号相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/wx.md)
 
 #### 抖音相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/douyin.md)
