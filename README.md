@@ -32,6 +32,8 @@
 
 #### 头条相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/toutiao.md)
 
+#### twitter相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/twitter.md)
+
 ///////////////////////////////////////////////////////////
 
 所有接口均可先免费试用，满意后再付费使用。
