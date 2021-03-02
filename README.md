@@ -34,7 +34,7 @@
 
 #### twitter相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/twitter.md)
 
-#### twitter相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/instagram.md)
+#### instagram相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/instagram.md)
 
 ///////////////////////////////////////////////////////////
 
