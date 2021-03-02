@@ -54,4 +54,5 @@ PROXY_ERROR：当代理服务器遇到错误时，将错误解释放在此字段
 POST http://whosecard.com:8081/api/proxy/request/abroad?key=***
 
 请求参数及使用方式与【使用代理转发国内请求】接口完全一样。
+如果请求的是媒体类型（如图片），请在json参数里传入isMediaType=true，会优化返回时间。
 ```
