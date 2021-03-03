@@ -28,3 +28,41 @@ tag是要搜索的tag名称
   edge_hashtag_to_media字段里是按时间排序的作品列表，可以翻页
   edge_hashtag_to_top_posts字段里是最热门的作品列表，为固定值，不能翻页
 ```
+
+#### 指定用户的作品列表
+```
+http://whosecard.com:8081/api/instagram/user/posts?username=***&cursor=***&key=***
+
+eg:
+http://whosecard.com:8081/api/instagram/user/posts?username=_iamxnami_&key=***
+
+username是用户的昵称
+如果要翻页，请传入cursor参数，第一页不需要传，之后每一页的cursor会在前一页的返回结果里返回
+
+返回如下：
+{
+	"ok": true,
+	"result": {***}
+}
+
+请求第一页的时候，会将用户的基础信息一同返回（如关注数、粉丝数、简介等），之后的翻页不会再额外返回用户基础信息。
+
+返回字段解释：
+  edge_owner_to_timeline_media字段里是作品列表，可以翻页
+```
+
+#### 单个作品详情
+```
+http://whosecard.com:8081/api/instagram/post/detail?shortcode=***&key=***
+
+eg:
+http://whosecard.com:8081/api/instagram/post/detail?shortcode=CLzGrEJnZvO&key=***
+
+shortcode是作品id，可从【指定用户的作品列表】接口中获取。
+
+返回如下：
+{
+	"ok": true,
+	"result": {***}
+}
+```

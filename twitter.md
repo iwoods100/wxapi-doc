@@ -40,3 +40,21 @@ user_id是twitter用户的数字id，可通过【用户基础信息】获取
 	"result": {***}
  }
 ```
+
+#### 实时搜索
+```
+http://whosecard.com:8081/api/twitter/search?keyword=***&cursor=***&search_type=***&key=***
+
+eg:
+http://whosecard.com:8081/api/twitter/search?keyword=cat&search_type=image&key=***
+
+keyword要搜索的关键词
+search_type为搜索类型，支持以下值：top(热门),live(最新),user(搜用户),image(搜图片),video(搜视频), 默认不传时取值top
+如果要翻页，请传入cursor参数，cursor参数会在前一页的返回结果里返回，请求第一页时不用传cursor
+
+返回如下：
+{
+	"ok": true,
+	"result": {***}
+ }
+```
