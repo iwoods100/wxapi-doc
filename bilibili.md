@@ -57,26 +57,29 @@ api=user_followers
 mid=用户id，如 507537547
 page：翻页数，默认为1
 
-
 获取视频列表：
 api=user_submit_videos
 mid=用户id，如 507537547
 page：翻页数，默认为1
 
-获取单条视频的统计数据：
+获取用户动态历史列表：
+api=user_space_history
+mid=用户id，如 2505015
+offset_dynamic_id： 上一页请求的最后一条动态id，用来翻页，初始为0
+
+获取单条视频详情数据：
+api=video_info
+bvid=视频bvid，如 BV1Qy4y127f5
+
+获取单条视频的统计数据(建议使用【获取单条视频详情数据】接口)：
 api=single_stat
 aid=单条视频id，如 91256107
 
-获取单条视频的tag列表：
+获取单条视频的tag列表(建议使用【获取单条视频详情数据】接口)：
 api=detail_tag
 aid=单条视频id，如 91256107
 
 获取视频下的评论：
 api=comments
 aid=单条视频id，如 91256107
-
-获取动态历史列表：
-api=user_space_history
-mid=用户id，如 2505015
-offset_dynamic_id： 上一页请求的最后一条动态id，用来翻页，初始为0
 ```
