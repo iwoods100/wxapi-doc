@@ -60,10 +60,11 @@ userId为用户唯一数字id，如: 119808726
 ps：所有统计性数字上万后会使用缩写，比如：3.1w
 ```
 
-#### 获取单个视频的信息（app版，可能不稳定，建议使用web版接口）
+#### 获取单个视频的信息（app版）
 ```
-http://whosecard.com:8081/api/kuaishou/photo/profile/v2?photoId=***&key=***
+http://whosecard.com:8081/api/kuaishou/photo/profile/v2?shareUrl=***&photoId=***&key=***
 
+shareUrl是视频的分享短链接，如：https://v.kuaishou.com/16tm5I
 photoId是视频的唯一数字id，如：5223894118313887282
 
 返回如下：
@@ -75,6 +76,7 @@ photoId是视频的唯一数字id，如：5223894118313887282
 }
 ```
 
+<!--
 #### 获取单个视频的信息（web版）
 ```
 http://whosecard.com:8081/api/kuaishou/photo/profile/web/v1?shareUrl=***&photoId=***&key=***
@@ -92,6 +94,7 @@ photoId是视频id，如：3xa7rzmrfa4epwq
   }
 }
 ```
+-->
 
 #### 获取小店商品列表
 ```
