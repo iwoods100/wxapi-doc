@@ -29,16 +29,19 @@ urlToken=用户token，如 zhouyuan
 
 提问页：
 api=question
+questionId: 提问页id
 offset：用于翻页，下一页的offset参数使用上一页翻回结果的paging.next值
 sortBy: 回答排序，可取值default/updated，默认去default
-
-搜索页：
-api=search
-q=搜索关键词
-offset：用于翻页，下一页的offset参数使用上一页翻回结果的paging.next值
 
 评论列表
 api=root_comments
 itemType=作品类型，支持两种:article与answer
 itemId=作品ID
 ```
+
+<!--
+搜索页：
+api=search
+q=搜索关键词
+offset：用于翻页，下一页的offset参数使用上一页翻回结果的paging.next值
+-->
