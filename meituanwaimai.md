@@ -98,3 +98,20 @@ page为翻页参数，注意是从0开始，每次翻页+1即可，此接口基�
   }
 }
 ```
+
+#### 在店铺内搜索商品列表
+```
+http://whosecard.com:8081/api/mtwaimai/search/inShop?key=***&wm_poi_id=***&keyword=***&&page=0
+
+参数解释：
+wm_poi_id为店铺id
+keyword为搜索关键词
+page为翻页参数，注意是从0开始，每次翻页+1即可，不传默认为0
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与官方接口一样，字段比较多，按字面意思理解即可
+  }
+}
