@@ -2,7 +2,7 @@
 
 [官网介绍](http://www.whosecard.com?from=api-doc)
 
-[若接口文档无法打开或访问较慢时，可使用备用文档](https://api-iwoods.doc.coding.io/)
+## 若接口文档无法打开或访问较慢时，请使用[备用文档](https://api-iwoods.doc.coding.io/)
 
 所有接口均返回json格式，其中参数ok[true|false]表示是否请求成功，retCode为[返回码](https://github.com/iwoods100/wxapi-doc/blob/master/retcode.md)，当ok=false时，会返回对应的error字段.
 
