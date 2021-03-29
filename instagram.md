@@ -8,7 +8,21 @@
 * 当返回ok=false时，可以参考返回的error字段（如果存在的话）
 * 一般来说，接口只要返回cost=true，就表示请求有效，会进行收费，此时请不要再重试了，这种情况一般是请求资源已经失效。
 
-#### 搜索指定tag的作品列表
+#### 搜索框关键词搜索
+```
+http://whosecard.com:8081/api/instagram/search/top?keyword=***&key=***
+
+eg:
+http://whosecard.com:8081/api/instagram/search/top?keyword=cat&key=***
+
+返回如下：
+{
+	"ok": true,
+	"result": {***}
+}
+```
+
+#### 获取指定tag的作品列表
 ```
 http://whosecard.com:8081/api/instagram/search/tag?tag=***&cursor=***&key=***
 
