@@ -417,3 +417,18 @@ brand_id为品牌id，从【品牌热DOU榜 - 指定品牌分类下的指定某�
   }
 }
 ```
+
+#### 抖音直播间基础信息 - 包括当前观看人数等
+```
+http://whosecard.com:8081/api/douyin/webcast/room/info?key=***&room_id=**
+
+room_id是直播间id，对于正在直播的用户，可以从用户详情接口里获得room_id
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
