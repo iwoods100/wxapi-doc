@@ -26,6 +26,8 @@
 
 #### 美团外卖相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/meituanwaimai.md)
 
+#### 大众点评相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/dianping.md)
+
 <!-- #### 快手相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/kuaishou.md) -->
 
 #### b站相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/bilibili.md)
