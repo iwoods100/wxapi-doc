@@ -17,7 +17,7 @@ http://whosecard.com:8081/api/dianping/shop/list?key=***&lng=121.528064&lat=31.3
 参数解释：
 lng与lat分别为指定的经纬度，不能为空
 start为翻页参数，注意是从0开始，下一页的start将在本次请求的nextStartIndex字段返回
-categoryid为店铺一级类型，目前支持这些类型，不能为空：
+categoryid为店铺类型，目前支持这些类型，不能为空：
   10: 美食
   133: 酒吧
   135: ktv
