@@ -180,6 +180,22 @@ http://whosecard.com:8081/api/xiaohongshu/note/faved/v1?user_id=***&key=***
 }
 ```
 
+#### 获取与用户互动的笔记列表
+```
+http://whosecard.com:8081/api/xiaohongshu/note/atme/v1?user_id=***&page=1&key=***
+
+如果要翻页，需要传入page参数，第一页传1，之后每一页加1，以此类推
+返回如下：
+{
+  "ok": true,
+  "retCode": 0,
+  "cost": true,
+  "result": {
+    ... # 返回值与小红书接口一样
+  }
+}
+```
+
 #### 获取商城店铺下的商品列表
 ```
 http://whosecard.com:8081/api/xiaohongshu/store/items?store_id=***&page=1&key=***
