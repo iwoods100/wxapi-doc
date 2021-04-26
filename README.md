@@ -16,8 +16,6 @@
 
 #### 抖音相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/douyin.md)
 
-#### 抖音火山版相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/douyinhuoshan.md)
-
 #### 小红书相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/xiaohongshu.md)
 
 <!-- #### 社交电商-【橙心优选】相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/cxyx.md) -->
@@ -35,6 +33,8 @@
 <!-- #### 知乎相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/zhihu.md) -->
 
 #### 头条相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/toutiao.md)
+
+#### 淘宝/天猫相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/taobao.md)
 
 #### twitter相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/twitter.md)
 
