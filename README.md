@@ -36,6 +36,8 @@
 
 #### 淘宝/天猫相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/taobao.md)
 
+#### 京东相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/jd.md)
+
 #### twitter相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/twitter.md)
 
 #### instagram相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/instagram.md)
