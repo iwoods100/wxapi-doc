@@ -27,6 +27,20 @@ lng与lat分别为指定的经纬度
 }
 ```
 
+#### 根据partnerId获取grouponId
+```
+http://whosecard.com:8081/api/shihuigroup/getGrouponId?partner_id=168968&key=***
+
+partner_id是从【根据地理坐标获取附近自提点列表】接口获取到的相关id
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与官方接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
 #### 获取指定团长店铺下的商品种类列表
 ```
 http://whosecard.com:8081/api/shihuigroup/listCategory?key=***&groupon_id=93763&partner_id=351382
