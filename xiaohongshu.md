@@ -210,6 +210,19 @@ http://whosecard.com:8081/api/xiaohongshu/store/items?store_id=***&page=1&key=**
 }
 ```
 
+#### 搜索框建议词
+```
+http://whosecard.com:8081/api/xiaohongshu/search/recommend?keyword=口红&key=***
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与小红书接口一样
+  }
+}
+```
+
 #### 关键字搜索笔记列表
 ```
 http://whosecard.com:8081/api/xiaohongshu/search/notes?keyword=口红&key=***&page=1&sort=general
