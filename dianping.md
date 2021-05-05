@@ -81,3 +81,53 @@ start为翻页参数，注意是从0开始，下一页的start将在本次请求
   }
 }
 ```
+
+#### 获取用户详情
+```
+http://whosecard.com:8081/api/dianping/user/profile?key=***&user_id=154081440
+
+参数解释：
+user_id为用户id
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与官方接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
+#### 获取用户动态列表
+```
+http://whosecard.com:8081/api/dianping/user/feeds?key=***&user_id=154081440&start=0
+
+参数解释：
+user_id为用户id
+start为翻页参数，下一页的start将在本次请求的nextStartIndex字段返回
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与官方接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
+#### 获取单个动态详情
+```
+http://whosecard.com:8081/api/dianping/feed/detail?key=***&content_id=864651974&content_type=1
+
+参数解释：
+content_id为动态id，在用户动态列表接口里返回
+content_type为动态类型，在用户动态列表接口里返回
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与官方接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
