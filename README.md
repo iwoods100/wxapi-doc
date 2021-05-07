@@ -14,6 +14,8 @@
 
 #### 微信公众号相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/wx.md)
 
+#### 微博相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/weibo.md)
+
 #### 抖音相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/douyin.md)
 
 #### 小红书相关接口，[接口文档](https://github.com/iwoods100/wxapi-doc/blob/master/xiaohongshu.md)
