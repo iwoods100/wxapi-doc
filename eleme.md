@@ -71,12 +71,13 @@ store_id为店铺id，从店铺列表接口中获取
 
 #### 获取店铺指定分类下的商品列表
 ```
-http://whosecard.com:8081/api/eleme/shop/category/detail/v1?key=***&store_id=531831336&category_ids=1,8&category_type=3
+http://whosecard.com:8081/api/eleme/shop/category/detail/v1?key=***&store_id=531831336&category_ids=1,8&category_type=3&page=1
 
 参数解释：
 store_id为店铺id，从店铺列表接口中获取
 category_ids为分类id，取值于【店铺商品分类接口】里每个分类的cat2Ids字段，多个分类id用半角逗号分割，每次最多传3个id
 category_type为分类type，取值于【店铺商品分类接口】里每个分类的type字段
+page为翻页参数，从1开始，每次翻页加1
 
 返回如下：
 {
