@@ -72,6 +72,7 @@ http://whosecard.com:8081/api/dianping/shop/review?key=***&shopid=*&start=0
 参数解释：
 shopid为店铺id，可以是数字id或字母id
 start为翻页参数，注意是从0开始，下一页的start将在本次请求的nextStartIndex字段返回
+sort_type为排序参数：0(综合排序)，1(时间排序)，默认为0，两种排序返回的字段格式可能有细微区别，以实际返回为准
 
 返回如下：
 {
