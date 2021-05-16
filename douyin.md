@@ -10,6 +10,21 @@
 
 **除非特殊说明，默认都是从app接口获取数据。**
 
+#### 首页推荐流视频
+```
+http://whosecard.com:8081/api/douyin/aweme/feed?key=***
+
+视频为主页随机更新，遇到重复视频也是正常现象。
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与抖音接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
 #### 实时获取用户发布的音乐作品列表
 ```
 http://whosecard.com:8081/api/douyin/aweme/music/list?key=***&user_id=96637069360
