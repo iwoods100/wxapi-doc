@@ -231,6 +231,7 @@ http://whosecard.com:8081/api/xiaohongshu/search/notes/v1?keyword=口红&key=***
 sort为搜索排序方式，可取值：general(综合) popularity_descending(最热) time_descending(最新)， 默认取general
 
 ⚠️注意：小红书搜索接口最多翻50页
+解析结果时，请根据返回的model_type来判断不同类型的笔记，比如当model_type=note和ads时对应的字段格式有所不同。
 
 返回如下：
 {
