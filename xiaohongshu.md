@@ -225,11 +225,10 @@ http://whosecard.com:8081/api/xiaohongshu/search/recommend?keyword=口红&key=**
 
 #### 关键字搜索笔记列表
 ```
-http://whosecard.com:8081/api/xiaohongshu/search/notes?keyword=口红&key=***&page=1&sort=general
+http://whosecard.com:8081/api/xiaohongshu/search/notes/v1?keyword=口红&key=***&page=1&sort=general
 
 如果要翻页，需要传入page参数，从1开始，每页最多20条。
 sort为搜索排序方式，可取值：general(综合) popularity_descending(最热) time_descending(最新)， 默认取general
-filter_note_type为笔记类型筛选，可取值：普通笔记、视频笔记，默认不传此参数，即不执行筛选
 
 ⚠️注意：小红书搜索接口最多翻50页
 
