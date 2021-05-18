@@ -57,7 +57,7 @@ groupon_id与partner_id是从【根据地理坐标获取附近自提点列表】
 }
 ```
 
-#### 根据地理坐标获取附近自提点列表
+#### 列出店铺下指定分类的商品列表
 ```
 http://whosecard.com:8081/api/shihuigroup/listGoods?key=***&groupon_id=93763&partner_id=351382&category_id=473&category_type=1&page=1
 
