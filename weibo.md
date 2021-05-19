@@ -10,6 +10,22 @@
 
 **除非特殊说明，默认都是从app接口获取数据。**
 
+#### 获取单个微博作品详情
+```
+http://whosecard.com:8081/api/weibo/mblog/detail/v1?key=***&mid=4638597396828758
+
+参数解释：
+mid为微博作品id
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与官方接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
 #### 获取用户详情
 ```
 http://whosecard.com:8081/api/weibo/user/profile/v1?key=***&user_id=1642566747
