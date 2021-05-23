@@ -10,6 +10,21 @@
 
 **除非特殊说明，默认都是从app接口获取数据。**
 
+#### 获取单个商品详情
+```
+http://whosecard.com:8081/api/jd/product/detail/v1?key=***&sku=3195185
+
+sku参数为商品id，来自于商品列表接口中的wareid取值，不能为空
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与官方接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
 #### 获取店铺商品列表
 ```
 http://whosecard.com:8081/api/jd/shop/products/v1?key=***&shop_id=1000001782&seller_id=1036678467&page=1&sort=0

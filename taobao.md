@@ -10,6 +10,21 @@
 
 **除非特殊说明，默认都是从app接口获取数据。**
 
+#### 获取单个商品详情
+```
+http://whosecard.com:8081/api/taobao/product/detail/v1?key=***&item_id=624015039172
+
+item_id为商品id，不能为空
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与官方接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
 #### 获取店铺商品列表
 ```
 http://whosecard.com:8081/api/taobao/shop/products/v1?key=***&shop_id=100004927&seller_id=1036678467&page=1&sort=0
