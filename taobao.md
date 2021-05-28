@@ -63,21 +63,41 @@ page为翻页参数，从1开始，每次翻页需要加1
 }
 ```
 
-#### 搜索关键词
+#### 在淘宝里搜索关键词
 ```
 根据关键词返回商品列表
 
-http://whosecard.com:8081/api/taobao/search/v1?key=***&keyword=手机&page=1&search_tab=0&sort=0
+http://whosecard.com:8081/api/taobao/search/v1?key=***&keyword=手机&page=1&sort=0
 
-shop_id与seller_id为店铺相关id，不能为空
 page为翻页参数，从1开始，每次翻页需要加1
-search_tab为搜索类型：0（搜全部），1（搜天猫）。默认为0
 sort为排序参数，支持以下排序（默认为0）：
   0: 综合
   1: 销量
   2: 新品
   3: 低价优先
   4: 高价优先
+
+返回如下：
+{
+  "ok": true,
+  "result": {
+    ... # 返回值与官方接口一样，字段比较多，按字面意思理解即可
+  }
+}
+```
+
+#### 在天猫里搜索关键词
+```
+根据关键词返回商品列表
+
+http://whosecard.com:8081/api/tmall/search/v1?key=***&keyword=手机&page=1&sort=0
+
+page为翻页参数，从1开始，每次翻页需要加1
+sort为排序参数，支持以下排序（默认为0）：
+  0: 综合
+  1: 销量
+  2: 低价优先
+  3: 高价优先
 
 返回如下：
 {
